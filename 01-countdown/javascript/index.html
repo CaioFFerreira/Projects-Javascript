@@ -21,30 +21,29 @@ const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
  
-var countDownDate = new Date("September 27, 2020 22:12:00");
+var countDownDate = new Date("September 27, 2021 22:21:00").getTime();
 
 var x = setInterval(function() {
 
-  var now = new Date();
+  var now = new Date().getTime();
     
-  var distance = countDownDate - now;
+  var tempo = countDownDate - now;
 
-  var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var s = Math.floor((distance % (1000 * 60)) / 1000);
+  var d = Math.floor(tempo / (1000 * 60 * 60 * 24));
+  var h = Math.floor((tempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var m = Math.floor((tempo % (1000 * 60 * 60)) / (1000 * 60));
+  var s = Math.floor((tempo % (1000 * 60)) / 1000);
 
   overTime(d , days);
   overTime(h , hours);
   overTime(m , minutes);
-  overTime(s , seconds);
 
   days.innerHTML = formatTime(d);
   hours.innerHTML = formatTime(h);
   minutes.innerHTML = formatTime(m);
   seconds.innerHTML = formatTime(s);
 
-  if (distance < 0) {
+  if (tempo < 0) {
     clearInterval(x);
     countdown.innerHTML = `
         <p class="game-over red">Game over</p>
