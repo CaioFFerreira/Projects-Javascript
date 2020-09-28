@@ -21,11 +21,11 @@ const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
  
-var countDownDate = new Date("September 27, 2020 22:10:00").getTime();
+var countDownDate = new Date("September 27, 2020 22:12:00");
 
 var x = setInterval(function() {
 
-  var now = new Date().getTime();
+  var now = new Date();
     
   var distance = countDownDate - now;
 
