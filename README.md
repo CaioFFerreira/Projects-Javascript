@@ -1,5 +1,5 @@
 # Projects-Javascript
 
-01- Countdown
+01- Countdown - https://countdowncaio.netlify.app/
 
-02- Gerador RBG
+02- Gerador RBG - https://geradorrgb.netlify.app/
