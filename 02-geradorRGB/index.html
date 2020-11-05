@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador RGB</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="gerador">
+    <div class="gerador__item red">
+        <input type="range" min="0" max="255" id="red">
+    </div>
+    <div class="gerador__item green">
+        <input type="range" min="0" max="255" id="green">
+    </div>
+    <div class="gerador__item blue">
+        <input type="range" min="0" max="255" id="blue">
+    </div>
+
+    <div class="visor">
+        background-color: rgb(<span id="red-number"></span>,<span id="green-number"></span>,<span id="blue-number"></span>);
+    </div>
+    <div class="box">
+
+    </div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

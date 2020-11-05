@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>countdown</title>
-</head>
-<body>
-    <ul id="countdown">
-        <li><span id="days"></span> DAY</li>
-        <li><span id="hours"></span> HRS</li>
-        <li><span id="minutes"></span> MIN</li>
-        <li><span id="seconds"></span> SEC</li>
-    </ul>
-<script>
 const countdown = document.querySelector('#countdown');
 
 const days = document.querySelector('#days');
@@ -60,46 +44,3 @@ function overTime(time , element){
         element.classList.add('red');
      }
 }
-
-</script>
-
-<style>
-*{
-	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
-    list-style: none;
-}
-body{
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-ul{
-    color:#fff;
-}
-ul li{
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-ul li span{
-    font-size: 48px;
-    padding-right: 5px;
-}
-.red{
-    color:#FB0D1C;
-}
-
-.game-over{
-    font-size: 42px;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
-
-</style>
-</body>
-</html>
