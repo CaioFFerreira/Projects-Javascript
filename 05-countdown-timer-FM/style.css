@@ -146,6 +146,9 @@ body {
   .countdown--style p{
     font-size: 10px;
   }
+  .natal{
+    font-size: 32px;
+  }
 }
 @media(max-width:400px){
   .countdown--style span{
