@@ -17,13 +17,13 @@
 }
 
 .red{
-    background-color: red;
+    background-color: rgb(209, 55, 55);
 }
 .green{
-    background-color: green;
+    background-color: rgb(92, 172, 92);
 }
 .blue{
-    background-color: blue;
+    background-color: rgb(95, 95, 238);
 }
 .visor{
     width: 100%;

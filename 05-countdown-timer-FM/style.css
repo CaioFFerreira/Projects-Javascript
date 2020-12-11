@@ -1,0 +1,157 @@
+*, 
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #1E1E2A;
+  background-image: url('images/bg-stars.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown{
+  text-align: center;
+  width: 100%;
+  max-width: 580px;
+}
+.countdown h1{
+  color:#fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 80px 10px;
+}
+.countdown__timer{
+  width: 100%;
+  display: grid;
+  gap:20px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.natal{
+  color:hsl(345, 95%, 68%);
+  font-size: 58px;
+  font-weight: 700;
+}
+.countdown--style span{
+  position: relative;
+  display: inline-block;
+  color:hsl(345, 95%, 68%);
+  font-size: 58px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 160px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #2C2C44 50%, #34364F 50%);
+  box-shadow:0px 7px 2px 0px #1A1A24;
+}
+.countdown--style span::after{
+  content: '';
+  width: 100%;
+  height:10px ;
+  position: absolute;
+  left: 0px;
+  top: 47%;
+  background-image: url('images/line.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.countdown--style span::before{
+  content: '';
+  width: 100%;
+  height:1px ;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  opacity: 0.4;
+  box-shadow: 0 0 15px rgba(0,0,0,0.16);
+  background-color: #282A41;
+}
+.countdown--style p{
+  padding: 20px 0px;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#8685A4;
+}
+.footer{
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/pattern-hills.svg');
+}
+.footer ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer ul li{
+ padding: 15px;
+ cursor: pointer;
+}
+.footer ul li svg{
+  fill:#8385A9;
+  height: 24px;
+  width: 24px;
+  transition: 0.2s ease-in-out;
+ }
+ .footer ul li svg:hover{
+  fill:hsl(345, 95%, 68%);
+ }
+
+@media(max-width:800px){
+  .countdown__timer{
+    gap:5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .countdown{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+   }
+   .countdown h1{
+    font-size: 16px;
+  }
+  .countdown--style span{
+    font-size: 18px;
+    max-width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .countdown--style p{
+    font-size: 10px;
+  }
+}
+@media(max-width:400px){
+  .countdown--style span{
+    max-width: 60px;
+  }
+  .countdown--style p{
+    font-size: 8px;
+  }
+}
