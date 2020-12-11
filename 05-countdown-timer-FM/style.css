@@ -152,7 +152,7 @@ body {
 }
 @media(max-width:400px){
   .countdown--style span{
-    max-width: 60px;
+    max-width: 70px;
   }
   .countdown--style p{
     font-size: 8px;
