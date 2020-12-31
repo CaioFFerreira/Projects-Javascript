@@ -5,7 +5,7 @@ const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
  
-var countDownDate = new Date("December 24, 2020 23:59:59").getTime();
+var countDownDate = new Date("December 31, 2020 23:59:59").getTime();
 
 var x = setInterval(function() {
 
@@ -26,7 +26,7 @@ var x = setInterval(function() {
   if (tempo < 0) {
     clearInterval(x);
     countdown.innerHTML = `
-        <p class="natal">Feliz natal</p>
+        <p class="natal">Feliz Ano novo</p>
     `;
   }
 }, 1000);
